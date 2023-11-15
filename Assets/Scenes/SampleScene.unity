@@ -217,9 +217,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1202974139}
   - component: {fileID: 1202974138}
+<<<<<<< HEAD
   - component: {fileID: 1202974140}
   m_Layer: 0
   m_Name: Sundowner
+=======
+  m_Layer: 0
+  m_Name: 235460_screenshots_20170602092333_1
+>>>>>>> b95a4d89e99c8a7f5247a20297e4e29f49d4fa36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,6 +297,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!82 &1202974140
 AudioSource:
   m_ObjectHideFlags: 0
@@ -388,3 +394,5 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> b95a4d89e99c8a7f5247a20297e4e29f49d4fa36
