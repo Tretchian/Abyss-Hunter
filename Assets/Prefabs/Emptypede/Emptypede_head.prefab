@@ -178,3 +178,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 1
+  body_prefab: {fileID: 4993769693235688141, guid: a5500931cbc1f5d42bbf2816480d741b, type: 3}
+  length: 3

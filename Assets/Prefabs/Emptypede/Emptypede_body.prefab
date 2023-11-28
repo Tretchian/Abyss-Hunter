@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4275617673177184242}
   - component: {fileID: 2894172382282129689}
   - component: {fileID: 1186978691931656646}
+  - component: {fileID: -6907708222229752970}
   m_Layer: 0
   m_Name: Emptypede_body
   m_TagString: Untagged
@@ -121,7 +122,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.14642654
 --- !u!50 &2894172382282129689
 Rigidbody2D:
   serializedVersion: 4
@@ -164,3 +165,17 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   tag: Emptypede_body
+--- !u!114 &-6907708222229752970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4993769693235688141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b7b13e53444df4aa10826ff2c9dbc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  next_bodypart: {fileID: 0}
+  speed: 1
