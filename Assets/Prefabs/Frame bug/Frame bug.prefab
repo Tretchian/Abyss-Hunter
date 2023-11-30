@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 286906379117722422}
   - component: {fileID: 8069356707097900458}
   - component: {fileID: 1847826746874085226}
+  - component: {fileID: 7656537908664214281}
   m_Layer: 0
   m_Name: Frame bug
   m_TagString: Untagged
@@ -164,3 +165,19 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 5
   tag: 
+--- !u!114 &7656537908664214281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832854906734459422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8501d545ba06ce4449f37b6fcd10fa5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
+  _stopTimeSeconds: 0.6
+  _moveTimeSeconds: 0.4
+  _moveRandomness: 0.8
