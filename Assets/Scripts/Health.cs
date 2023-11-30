@@ -5,11 +5,13 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField]
-    private float maxHealth = 5f, currentHealth = 5f;
+    private float maxHealth, currentHealth;
     [SerializeField]
-    private string tag;
     private bool dead = false;
-
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
     private void Update()
     {
         if (currentHealth <= 0) dead = true;
@@ -23,7 +25,7 @@ public class Health : MonoBehaviour
     {
         return maxHealth;
     }
-    public void Damage(float damage)
+    public void ChangeHealth(float damage) // Изменяет текущее здоровье на damage
     {
         currentHealth -= damage;
         if (currentHealth <= 0)
@@ -35,9 +37,5 @@ public class Health : MonoBehaviour
     public bool IsDead()
     {
         return dead;
-    }
-    public string GetTag()
-    {
-        return tag;
     }
 }
