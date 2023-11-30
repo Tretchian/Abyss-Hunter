@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]
-    private float maxHealth = 5f, currentHealth = 5f;
-    [SerializeField]
-    private string tag;
+    [SerializeField] private float maxHealth = 5f, currentHealth = 5f;
+    [SerializeField] private string tag;
     private bool dead = false;
 
     private void Update()
