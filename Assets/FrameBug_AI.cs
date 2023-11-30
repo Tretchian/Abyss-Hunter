@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Firstscripttobehere : MonoBehaviour
+public class FrameBug_AI : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,5 +13,6 @@ public class Firstscripttobehere : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
 }
