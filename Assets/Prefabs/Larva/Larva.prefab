@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2922990411184046589}
+  - component: {fileID: 8139211819297999416}
+  - component: {fileID: 1531038029350534307}
+  - component: {fileID: 3914083029566690163}
   - component: {fileID: 3289679956750660528}
   - component: {fileID: 1298807996156887337}
   - component: {fileID: 3259762518377476953}
-  - component: {fileID: 8139211819297999416}
-  - component: {fileID: 1531038029350534307}
   - component: {fileID: 9013617585164658416}
-  - component: {fileID: 3914083029566690163}
   m_Layer: 0
   m_Name: Larva
   m_TagString: Untagged
@@ -38,6 +38,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8139211819297999416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918041176046667833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3030527242d917546b1065a4a3595ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
+  _speed_variety: 0.2
+  _target: {fileID: 0}
+--- !u!114 &1531038029350534307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918041176046667833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119a5a8b36a51e54289c5e8066ce7e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 3
+  _currentHealth: 3
+  dead: 0
+  _invulnerabilityTime: 0
+  invulnerable: 0
+--- !u!114 &3914083029566690163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918041176046667833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc22beb0028929648bb29292366a73c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attack_coolDown: 0.683
+  _attack_distance: 1
+  _attack_damage: 0.4
+  _collision_damage: 0.5
+  _collision_damage_cooldown: 0.5
+  attackOnCoolDown: 0
+  collisionDamageOnCoolDown: 0
+  col: {fileID: 0}
+  Target_Unit: {fileID: 0}
+  colliding_with: {fileID: 0}
+  results:
+  - {fileID: 0}
 --- !u!212 &3289679956750660528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -156,36 +212,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8139211819297999416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7918041176046667833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3030527242d917546b1065a4a3595ea1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 1
-  _speed_variety: 0.2
-  _target: {fileID: 0}
---- !u!114 &1531038029350534307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7918041176046667833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 119a5a8b36a51e54289c5e8066ce7e2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 3
-  dead: 0
 --- !u!50 &9013617585164658416
 Rigidbody2D:
   serializedVersion: 4
@@ -213,18 +239,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3914083029566690163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7918041176046667833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc22beb0028929648bb29292366a73c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _attack_coolDown: 0.4
-  _attack_distance: 1
-  _damage: 0.4

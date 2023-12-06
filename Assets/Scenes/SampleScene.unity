@@ -132,11 +132,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 276298382}
+  - component: {fileID: 276298385}
+  - component: {fileID: 276298383}
   - component: {fileID: 276298381}
   - component: {fileID: 276298380}
-  - component: {fileID: 276298383}
   - component: {fileID: 276298384}
-  - component: {fileID: 276298385}
   m_Layer: 0
   m_Name: Cvi_placeholder
   m_TagString: Player
@@ -308,9 +308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119a5a8b36a51e54289c5e8066ce7e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  currentHealth: 5
+  _maxHealth: 5
+  _currentHealth: 0
   dead: 0
+  _invulnerabilityTime: 1
+  invulnerable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _larvaPrefab: {fileID: 7918041176046667833, guid: 7ad0f6f8dc9cec74eb7c4ba07aa3b884, type: 3}
+  timeScale: 1
 --- !u!1001 &8690956449181694159
 PrefabInstance:
   m_ObjectHideFlags: 0

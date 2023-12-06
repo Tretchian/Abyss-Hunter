@@ -1,41 +1,41 @@
 using System.Collections;
-using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]
-    private float maxHealth, currentHealth;
-    [SerializeField]
-    private bool dead = false;
+    [SerializeField] private float _maxHealth = 5f;
+    [SerializeField] private float _currentHealth;
+    [SerializeField] private bool dead = false;
+    [SerializeField] private float _invulnerabilityTime = 1f;
+    [SerializeField] private bool invulnerable = false;
+    public float GetCurrentHealth => _currentHealth;
+    public float GetMaxHealth => _maxHealth;
+    public bool IsDead => dead;
     private void Start()
     {
-        currentHealth = maxHealth;
+        _currentHealth = _maxHealth;
     }
     private void Update()
     {
-        if (currentHealth <= 0) dead = true;
+        if (_currentHealth <= 0) dead = true;
     }
-
-    public float GetCurrentHealth()
+    public void DealDamage(float damage) // Изменяет текущее здоровье на damage
     {
-        return currentHealth;
-    }
-    public float GetMaxHealth()
-    {
-        return maxHealth;
-    }
-    public void ChangeHealth(float damage) // Изменяет текущее здоровье на damage
-    {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        if (invulnerable)
         {
-            currentHealth = 0;
-            dead = true;
+            Debug.Log("Invulnerable");
+            return;
+        }
+        else {
+            _currentHealth -= damage;
+            StartCoroutine(becomeInvulnerable()); 
         }
     }
-    public bool IsDead()
+    private IEnumerator becomeInvulnerable()
     {
-        return dead;
+        invulnerable = true;
+        yield return new WaitForSeconds(_invulnerabilityTime);
+        invulnerable = false;
     }
 }

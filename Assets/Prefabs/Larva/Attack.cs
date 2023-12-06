@@ -1,61 +1,83 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Animations;
+using UnityEngine.Experimental.Playables;
 
 public class Attack : MonoBehaviour
 {
-    [SerializeField] private float _attack_coolDown = 0.4f; // врем€ между атаками в секундах
-    [SerializeField] public float _attack_distance = 1f; // рассто€ние на котором будет пытатьс€ атаковать
-    [SerializeField] private float _damage = .4f; // ”рон наносимый при атаке
+    [SerializeField] private float _attack_coolDown = 0.4f; // ¬рем€ между атаками в секундах
+    [SerializeField] private float _attack_distance = 1f; // –ассто€ние на котором будет пытатьс€ атаковать
+    [SerializeField] private float _attack_damage = .4f; // ”рон наносимый при атаке
+    [SerializeField] private float _collision_damage = .4f; // ”рон наносимый при столкновении
+    [SerializeField] private float _collision_damage_cooldown = .4f; // »нтервал урона при столкновении в секундах
+    [SerializeField] private bool attackOnCoolDown = false;
+    [SerializeField] private bool collisionDamageOnCoolDown = false;
+
+    private Collider2D col;
     private Animator animator;
-    private bool attackOnCoolDown = false;
-    public bool isAttacking = true;
-    private GameObject colliding_with, attacker;
-     
-    // Start is called before the first frame update
+    private GameObject Target_Unit, colliding_with;
+    private Collider2D[] results = new Collider2D[1];
+    private ContactFilter2D filter = new ContactFilter2D();
+    public float GetAttackDistance => _attack_distance;
+    public bool IsAttacking => attackOnCoolDown;
     void Start()
     {
         animator = GetComponent<Animator>();
+        col = this.gameObject.GetComponent<Collider2D>();
     }
-    // Update is called once per frame
     void Update()
     {
-        
+        Detect_Collision();
     }
-    private void AttackUnit()
+    public void AttackUnit()
     {
-        if (attackOnCoolDown || isAttacking) return;
-        animator.SetTrigger("Attack");
-        isAttacking = true;
+        if (attackOnCoolDown) return;
         attackOnCoolDown = true;
-        colliding_with.GetComponent<Health>().ChangeHealth(_damage);
-        StartCoroutine(DelayAttack());
-        AttackEnd();
+        animator.SetTrigger("Attack");
+        Detect_In_Attack_Range();
+        StartCoroutine(EndAttack());
     }
-    private void AttackEnd()
+    private void Detect_In_Attack_Range()
     {
-        if (isAttacking) isAttacking = false;
-    }
-    public void Detect(GameObject attackerObj)
-    {
-        
-        attacker = attackerObj;
-        foreach (Collider2D collider in Physics2D.OverlapCircleAll(attacker.transform.position, _attack_distance))
+        foreach (Collider2D collider in Physics2D.OverlapCircleAll(transform.position, _attack_distance))
         {
-            colliding_with = collider.gameObject;
-            if (colliding_with.tag == "Player" && !attackOnCoolDown)
+            if (collider.gameObject.tag == "Player")
             {
-                Debug.Log(collider.name);
-                AttackUnit();
-                
+                Target_Unit = collider.gameObject;
+                Target_Unit.GetComponent<Health>().DealDamage(_attack_damage);
+                Debug.Log("Attacking " + Target_Unit);
             }
         }
+        Target_Unit = null;
     }
-    private IEnumerator DelayAttack()
+    private void Detect_Collision()
+    {
+        results = new Collider2D[1];
+        colliding_with = null;
+        int resultsAmount = col.OverlapCollider(filter.NoFilter(), results);
+        if (resultsAmount > 0 && !collisionDamageOnCoolDown)
+        {
+            collisionDamageOnCoolDown = true;
+            foreach (Collider2D collider in results)
+            {
+                if (collider.gameObject.tag == "Player")
+                {
+                    colliding_with = collider.gameObject;
+                    colliding_with.GetComponent<Health>().DealDamage(_collision_damage);
+                }
+            }
+            StartCoroutine(EndCollisionDamage());
+        }
+    }
+    private IEnumerator EndAttack()
     {
         yield return new WaitForSeconds(_attack_coolDown);
         attackOnCoolDown = false;
+    }
+    private IEnumerator EndCollisionDamage()
+    {
+        yield return new WaitForSeconds(_collision_damage_cooldown);
+        collisionDamageOnCoolDown = false;
     }
     private void OnDrawGizmosSelected()
     {
