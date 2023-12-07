@@ -23,7 +23,8 @@ public class LarvaAI : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         health = GetComponent<Health>();
-        _speed += _speed_variety * Random.Range(-1,1);
+        _speed += Random.Range(-_speed_variety, _speed_variety);
+        if (_target == null) _target = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

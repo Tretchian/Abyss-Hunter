@@ -26,7 +26,7 @@ public class FrameBugAI : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         health = GetComponent<Health>();
-        target = GameObject.FindGameObjectWithTag("Player");
+        if (target == null) target = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(DelayMovement());
     }
 

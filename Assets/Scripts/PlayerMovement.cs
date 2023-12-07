@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
 
     public float speed = 1f;
+    public Stats stats;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,10 +22,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
         movement_direction.x = Input.GetAxis("Horizontal");
         movement_direction.y = Input.GetAxis("Vertical");
         sprite.flipX = movement_direction.x < 0;
-        transform.Translate(movement_direction.normalized * speed * Time.deltaTime, rb.transform);
+        transform.Translate(movement_direction.normalized * stats._movementspd * Time.deltaTime, rb.transform);
     }
 }
