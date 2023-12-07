@@ -1,16 +1,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_manager : MonoBehaviour
+public class PlayerStats: MonoBehaviour
 {
     [SerializeField] private float _itemPickupDistance = 1f;
     private Stats playerStats = new Stats();
+
+    [SerializeField] private float _baseMaxhp = 5f;
+    [SerializeField] private float _baseAttackspd = 1f;
+    [SerializeField] private float _baseAttackdmg = 1f;
+    [SerializeField] private float _baseMovementspd = 1f;
     private PlayerMovement movement;
+    private Health health;
     public List<Item> items = new List<Item>();
     Vector2 player_center;
     void Start()
     {
         movement = GetComponent<PlayerMovement>();
+        health = GetComponent<Health>();
+        //BaseStats = new Stats(5,5,1,1,1);    //TODO убрать хардкод параметры игрока
         recount();
        
     }
@@ -22,11 +30,13 @@ public class Item_manager : MonoBehaviour
     void recount()
     {
         playerStats = new Stats();
+        playerStats.addStats(new Stats(_baseMaxhp,_baseAttackspd,_baseAttackdmg,_baseMovementspd));
         foreach (Item item in items)
         {
             playerStats.addStats(item.stats);
         }
         movement.stats = playerStats;
+        
     }
     
     void pickup() //WIP надо привязать метод к кнопке поднятия предмета

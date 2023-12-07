@@ -588,7 +588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9b4da6221013148a9a8a276c73388b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
 --- !u!61 &1993390760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -726,6 +725,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPickupDistance: 1
+  _maxhp: 5
+  _attackspd: 1
+  _attackdmg: 1
+  _movementspd: 1
   items: []
 --- !u!1001 &8690956449181694159
 PrefabInstance:

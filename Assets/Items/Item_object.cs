@@ -5,7 +5,6 @@ public class Item_object : ScriptableObject
 {
     public string Name;
     public string Description;
-    public float _hp = 0f;
     public float _maxhp = 0f;
     public float _attackspd = 0f;
     public float _attackdmg = 0f;
