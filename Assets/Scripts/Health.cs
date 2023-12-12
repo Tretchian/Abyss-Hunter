@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Drawing;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class Health : MonoBehaviour
     [SerializeField] private float _invulnerabilityTime = 1f;
     [SerializeField] private bool invulnerable = false;
     public float GetCurrentHealth => _currentHealth;
+
+    public event Action OnHealthChange;
     public float GetMaxHealth => _maxHealth;
     public bool IsDead => dead;
     private void Start()
@@ -29,8 +32,10 @@ public class Health : MonoBehaviour
         }
         else {
             _currentHealth -= damage;
+            OnHealthChange.Invoke();
             StartCoroutine(becomeInvulnerable()); 
         }
+        
     }
     private IEnumerator becomeInvulnerable()
     {

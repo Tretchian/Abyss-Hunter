@@ -18,7 +18,6 @@ public class PlayerStats: MonoBehaviour
     {
         movement = GetComponent<PlayerMovement>();
         health = GetComponent<Health>();
-        //BaseStats = new Stats(5,5,1,1,1);    //TODO убрать хардкод параметры игрока
         recount();
        
     }
@@ -46,6 +45,7 @@ public class PlayerStats: MonoBehaviour
                 continue;
             }
             items.Add(collider.GetComponent<Item>());
+            
             collider.gameObject.SetActive(false);
         }
         recount();
