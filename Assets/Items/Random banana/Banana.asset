@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Banana
   m_EditorClassIdentifier: 
   Name: Banana
-  Description: Orange
-  _hp: -1
+  Description: ++Max health     ++Speed
   _maxhp: 2
   _attackspd: 0
   _attackdmg: 0

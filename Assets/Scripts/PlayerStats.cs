@@ -35,8 +35,8 @@ public class PlayerStats: MonoBehaviour
         {
             playerStats.addStats(item.stats);
         }
-        movement.stats = playerStats;
-        
+        movement.speed = playerStats._movementspd;
+        health._maxHealth = playerStats._maxhp;
     }
     
     void pickup() //WIP надо привязать метод к кнопке поднятия предмета

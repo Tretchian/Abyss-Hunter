@@ -32,7 +32,7 @@ public class FrameBugAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (health.IsDead() && !animator.IsUnityNull())
+        if (health.IsDead && !animator.IsUnityNull())
         {
             animator.SetTrigger("Die");
             return;

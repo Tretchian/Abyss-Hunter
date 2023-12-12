@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float _maxHealth = 5f;
+    [SerializeField] public float _maxHealth = 5f;
     [SerializeField] private float _currentHealth;
     [SerializeField] private bool dead = false;
     [SerializeField] private float _invulnerabilityTime = 1f;
@@ -37,5 +37,14 @@ public class Health : MonoBehaviour
         invulnerable = true;
         yield return new WaitForSeconds(_invulnerabilityTime);
         invulnerable = false;
+    }
+
+    public void SetMaxHealth(float maxHp)
+    {
+       _maxHealth = maxHp;
+        if (_currentHealth > _maxHealth)
+        {
+            _currentHealth = _maxHealth;
+        }
     }
 }
