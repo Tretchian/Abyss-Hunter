@@ -555,8 +555,8 @@ Transform:
   m_GameObject: {fileID: 1993390756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.76, y: 1.93, z: 0}
-  m_LocalScale: {x: 2.001, y: 2.001, z: 2.001}
+  m_LocalPosition: {x: -3.0629, y: 0.0571, z: 0}
+  m_LocalScale: {x: 2.015207, y: 2.015207, z: 2.015207}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -573,9 +573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119a5a8b36a51e54289c5e8066ce7e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  currentHealth: 5
-  tag: 
+  _maxHealth: 5
+  _currentHealth: 0
+  dead: 0
+  _invulnerabilityTime: 1
+  invulnerable: 0
 --- !u!114 &1993390759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,6 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9b4da6221013148a9a8a276c73388b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!61 &1993390760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -725,10 +728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPickupDistance: 1
-  _maxhp: 5
-  _attackspd: 1
-  _attackdmg: 1
-  _movementspd: 1
+  _baseMaxhp: 5
+  _baseAttackspd: 1
+  _baseAttackdmg: 1
+  _baseMovementspd: 1
   items: []
 --- !u!1001 &8690956449181694159
 PrefabInstance:

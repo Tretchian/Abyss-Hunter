@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945cd19f1d00bb34596afff00db4fe03, type: 3}
   m_Name: Banana
   m_EditorClassIdentifier: 
-  Name: Banana
-  Description: ++Max health     ++Speed
+  Name: Cursed spikes
+  Description: Return damage to your enemies!
+  Sprite: {fileID: -5361988319473284080, guid: 9a7bb40f13030a94a9a1b2f6e499b101, type: 3}
   _maxhp: 2
   _attackspd: 0
   _attackdmg: 0
