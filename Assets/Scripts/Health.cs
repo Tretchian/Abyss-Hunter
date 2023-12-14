@@ -1,39 +1,55 @@
+using System;
+using System.Collections;
+using System.Drawing;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float maxHealth = 5f, currentHealth = 5f;
-    [SerializeField] private string tag;
-    private bool dead = false;
+    [SerializeField] public float _maxHealth = 5f;
+    [SerializeField] private float _currentHealth;
+    [SerializeField] private bool dead = false;
+    [SerializeField] private float _invulnerabilityTime = 1f;
+    [SerializeField] private bool invulnerable = false;
+    public float GetCurrentHealth => _currentHealth;
 
+    public event Action OnHealthChange;
+    public float GetMaxHealth => _maxHealth;
+    public bool IsDead => dead;
+    private void Start()
+    {
+        _currentHealth = _maxHealth;
+    }
     private void Update()
     {
-        if (currentHealth <= 0) dead = true;
+        if (_currentHealth <= 0) dead = true;
+    }
+    public void DealDamage(float damage) // Изменяет текущее здоровье на damage
+    {
+        if (invulnerable)
+        {
+            Debug.Log("Invulnerable");
+            return;
+        }
+        else {
+            _currentHealth -= damage;
+            OnHealthChange.Invoke();
+            StartCoroutine(becomeInvulnerable()); 
+        }
+        
+    }
+    private IEnumerator becomeInvulnerable()
+    {
+        invulnerable = true;
+        yield return new WaitForSeconds(_invulnerabilityTime);
+        invulnerable = false;
     }
 
-    public float GetCurrentHealth()
+    public void SetMaxHealth(float maxHp)
     {
-        return currentHealth;
-    }
-    public float GetMaxHealth()
-    {
-        return maxHealth;
-    }
-    public void Damage(float damage)
-    {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+       _maxHealth = maxHp;
+        if (_currentHealth > _maxHealth)
         {
-            currentHealth = 0;
-            dead = true;
+            _currentHealth = _maxHealth;
         }
-    }
-    public bool IsDead()
-    {
-        return dead;
-    }
-    public string GetTag()
-    {
-        return tag;
     }
 }

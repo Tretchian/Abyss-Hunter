@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9c8aaa4bdcdc28409cf346c1d7a9701
+guid: eaf3467916af0d942bfc2a26c2bab876
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,12 +69,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Larva_0
+      name: MoldenLarva_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2886d3d6032d2134dba7042ea4d6fe20
-      internalID: -147039911
+      spriteID: 1d99d0be33d29ab478235ea5dd0288ec
+      internalID: -614696512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_1
+      name: MoldenLarva_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74e635244ef2e1f449b5bfcc30cf4baa
-      internalID: 607268664
+      spriteID: be208eafc1162d644bb86775900700da
+      internalID: -311296498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_2
+      name: MoldenLarva_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 330f6891603d8e140bf563f6c33a0c22
-      internalID: 2036811701
+      spriteID: d3660d10ef82a3649a613e755ab38912
+      internalID: -1832384689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_3
+      name: MoldenLarva_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf5f07019de08fe41b03daa2e8633bb7
-      internalID: -1902504914
+      spriteID: 00892e1cd253b284a98642e2070aecbc
+      internalID: 167440071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_4
+      name: MoldenLarva_4
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a27ee25cea5e8f7498b611d634e2716f
-      internalID: 1780119122
+      spriteID: 4024aabc352dbc34f9b5744b02f4a42e
+      internalID: -607531276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_5
+      name: MoldenLarva_5
       rect:
         serializedVersion: 2
         x: 32
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b85deb0398a91a4d8398fa5e87d10d0
-      internalID: 738226644
+      spriteID: ee060c5e48de0fa40b1dc3004e041130
+      internalID: -756103690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_6
+      name: MoldenLarva_6
       rect:
         serializedVersion: 2
         x: 64
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64de9d0274df9524ab2356fbf70cabb8
-      internalID: 932814908
+      spriteID: e056ba4f08c9a6d4c84dfe7e34ed5bcc
+      internalID: -1540152119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_7
+      name: MoldenLarva_7
       rect:
         serializedVersion: 2
         x: 96
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1eec4a4363e6874daeb7976d7648139
-      internalID: 126199917
+      spriteID: d24394a35b9a041489e6858fd731c3ce
+      internalID: 1895353785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_8
+      name: MoldenLarva_8
       rect:
         serializedVersion: 2
         x: 0
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d90c3f85e8e3964385ea6b54ecad5d8
-      internalID: -823186258
+      spriteID: 8478bd39ea06fca4483152ff5b797037
+      internalID: 355862263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_9
+      name: MoldenLarva_9
       rect:
         serializedVersion: 2
         x: 32
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ecffdeb57c0bb74c996fee49bc1e0b5
-      internalID: -663171915
+      spriteID: fc1d14d2ea672394293e6df3f6700061
+      internalID: -109749776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_10
+      name: MoldenLarva_10
       rect:
         serializedVersion: 2
         x: 64
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81bd37ae5cf6b6e409b0fb691e392174
-      internalID: -419540908
+      spriteID: 827075f9cea7c2141be14a757a747837
+      internalID: -178065210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_11
+      name: MoldenLarva_11
       rect:
         serializedVersion: 2
         x: 96
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f61bb3e0a04a27d41964123e643cef26
-      internalID: 1678909298
+      spriteID: b15b7c547afd4044db7f975aeb31bfff
+      internalID: -1215887265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_12
+      name: MoldenLarva_12
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d424d849efb2ce94fa074af72a42c72b
-      internalID: -131208170
+      spriteID: 706e3195522a50f4a8299ca4937f417c
+      internalID: -1060426939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_13
+      name: MoldenLarva_13
       rect:
         serializedVersion: 2
         x: 32
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64931d6201cb55c46903362b7f2f550b
-      internalID: -734550105
+      spriteID: 6d95053ac34ad5a48a0033f428c80c56
+      internalID: 710972200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Larva_14
+      name: MoldenLarva_14
       rect:
         serializedVersion: 2
         x: 64
@@ -418,8 +418,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ed1cc736ef57184f920061270732702
-      internalID: -1163609037
+      spriteID: e27edbbe897fd7440bb8384cdbecedd6
+      internalID: 2026732723
       vertices: []
       indices: 
       edges: []
@@ -435,21 +435,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Larva_0: -147039911
-      Larva_1: 607268664
-      Larva_10: -419540908
-      Larva_11: 1678909298
-      Larva_12: -131208170
-      Larva_13: -734550105
-      Larva_14: -1163609037
-      Larva_2: 2036811701
-      Larva_3: -1902504914
-      Larva_4: 1780119122
-      Larva_5: 738226644
-      Larva_6: 932814908
-      Larva_7: 126199917
-      Larva_8: -823186258
-      Larva_9: -663171915
+      MoldenLarva_0: -614696512
+      MoldenLarva_1: -311296498
+      MoldenLarva_10: -178065210
+      MoldenLarva_11: -1215887265
+      MoldenLarva_12: -1060426939
+      MoldenLarva_13: 710972200
+      MoldenLarva_14: 2026732723
+      MoldenLarva_2: -1832384689
+      MoldenLarva_3: 167440071
+      MoldenLarva_4: -607531276
+      MoldenLarva_5: -756103690
+      MoldenLarva_6: -1540152119
+      MoldenLarva_7: 1895353785
+      MoldenLarva_8: 355862263
+      MoldenLarva_9: -109749776
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
