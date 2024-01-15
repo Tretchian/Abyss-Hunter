@@ -34,8 +34,13 @@ public class Health : MonoBehaviour
         }
         else {
             _currentHealth -= damage;
+<<<<<<< HEAD
             OnTakenDamage.Invoke(transform.gameObject);
             StartCoroutine(becomeInvulnerable());
+=======
+            //OnHealthChange.Invoke();
+            StartCoroutine(becomeInvulnerable()); 
+>>>>>>> Arsenii
         }
         
     }

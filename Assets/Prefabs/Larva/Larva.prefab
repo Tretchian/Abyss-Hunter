@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1298807996156887337}
   - component: {fileID: 3259762518377476953}
   - component: {fileID: 9013617585164658416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Larva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,11 +89,6 @@ MonoBehaviour:
   _collision_damage_cooldown: 0.5
   attackOnCoolDown: 0
   collisionDamageOnCoolDown: 0
-  col: {fileID: 0}
-  Target_Unit: {fileID: 0}
-  colliding_with: {fileID: 0}
-  results:
-  - {fileID: 0}
 --- !u!212 &3289679956750660528
 SpriteRenderer:
   m_ObjectHideFlags: 0

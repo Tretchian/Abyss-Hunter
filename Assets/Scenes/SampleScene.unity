@@ -1114,6 +1114,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1885768686088519722, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
   m_PrefabInstance: {fileID: 8690956449181694159}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1177941339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177941334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0657a7bf14e39742b59b9bd6ee530e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _larvaPrefab: {fileID: 7918041176046667833, guid: 7ad0f6f8dc9cec74eb7c4ba07aa3b884, type: 3}
+  timeScale: 1
 --- !u!1 &1459656305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
@@ -1873,6 +1888,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55056ad2c9e7a674796aa55f8e30c8a7, type: 3}
+=======
+  item: {fileID: 11400000, guid: dc7fb09953c11934aa4aca51954d900f, type: 2}
+  script_container: {fileID: 0}
+>>>>>>> Arsenii
 --- !u!1 &1993390756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1907,7 @@ GameObject:
   - component: {fileID: 1993390759}
   - component: {fileID: 1993390758}
   - component: {fileID: 1993390763}
+  - component: {fileID: 1993390764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2082,6 +2102,7 @@ MonoBehaviour:
   _baseAttackdmg: 1
   _baseMovementspd: 1
   items: []
+<<<<<<< HEAD
 --- !u!224 &2121350411 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6181402913559371746, guid: 55056ad2c9e7a674796aa55f8e30c8a7, type: 3}
@@ -2246,6 +2267,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55056ad2c9e7a674796aa55f8e30c8a7, type: 3}
+=======
+--- !u!114 &1993390764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993390756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45aa01eb73202ce4ca59592d22f78131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originGO: {fileID: 0}
+  maxDistance: 3.3
+  angle: 35
+  _attack_coolDown: 0.4
+  attackOnCoolDown: 0
+  MouseAngle: 0
+  pointedObjects: []
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  Damage: 1
+  mousePos: {x: 0, y: 0, z: 0}
+>>>>>>> Arsenii
 --- !u!1001 &8690956449181694159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2327,6 +2374,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8304507107235490029, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1177941337}
+    - targetCorrespondingSourceObject: {fileID: 8304507107235490029, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1177941339}
   m_SourcePrefab: {fileID: 100100000, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
