@@ -217,6 +217,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &636190874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,6 +473,8 @@ PrefabInstance:
 >>>>>>> parent of 83dc4af (Проклятый банан)
 =======
 >>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
+=======
+>>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
 --- !u!1 &1177941334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8304507107235490029, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
@@ -668,7 +671,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.31, y: 0.86, z: -0.8804812}
+=======
+  m_LocalPosition: {x: -0.28733897, y: -0.27539936, z: -0.8804812}
+>>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
 =======
   m_LocalPosition: {x: -0.28733897, y: -0.27539936, z: -0.8804812}
 >>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
@@ -817,8 +824,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -3.0629, y: 0.0571, z: 0}
   m_LocalScale: {x: 2.015207, y: 2.015207, z: 2.015207}
+=======
+  m_LocalPosition: {x: -2.76, y: 1.93, z: 0}
+  m_LocalScale: {x: 2.001, y: 2.001, z: 2.001}
+>>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
 =======
   m_LocalPosition: {x: -2.76, y: 1.93, z: 0}
   m_LocalScale: {x: 2.001, y: 2.001, z: 2.001}
@@ -996,6 +1008,7 @@ MonoBehaviour:
   _attackdmg: 1
   _movementspd: 1
   items: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &2121350411 stripped
@@ -1190,6 +1203,8 @@ MonoBehaviour:
 >>>>>>> Arsenii
 =======
 >>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
+=======
+>>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
 --- !u!1001 &8690956449181694159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1280,12 +1295,16 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1993390757}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 3977032439234114345}
 <<<<<<< HEAD
   - {fileID: 1127994529}
   - {fileID: 1582221876}
 =======
 >>>>>>> parent of 83dc4af (Проклятый банан)
+=======
+  - {fileID: 1758497332}
+>>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
 =======
   - {fileID: 1758497332}
 >>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
