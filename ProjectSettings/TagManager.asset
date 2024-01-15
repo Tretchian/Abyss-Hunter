@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Item
+  - RoomSpawnPoint
+  - Rooms
   layers:
   - Default
   - TransparentFX
