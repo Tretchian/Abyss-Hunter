@@ -410,7 +410,11 @@ Transform:
   m_GameObject: {fileID: 1459656305}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.28733897, y: -0.27539936, z: -0.8804812}
+=======
+  m_LocalPosition: {x: -0.31, y: 0.86, z: -0.8804812}
+>>>>>>> parent of 83dc4af (Проклятый банан)
   m_LocalScale: {x: 30.799307, y: 15.762049, z: 0.8194767}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -555,8 +559,13 @@ Transform:
   m_GameObject: {fileID: 1993390756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -2.76, y: 1.93, z: 0}
   m_LocalScale: {x: 2.001, y: 2.001, z: 2.001}
+=======
+  m_LocalPosition: {x: -3.0629, y: 0.0571, z: 0}
+  m_LocalScale: {x: 2.015207, y: 2.015207, z: 2.015207}
+>>>>>>> parent of 83dc4af (Проклятый банан)
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -730,6 +739,66 @@ MonoBehaviour:
   _attackdmg: 1
   _movementspd: 1
   items: []
+<<<<<<< HEAD
+=======
+--- !u!1001 &3977032439234114345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4097312
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.914334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930456140008037639, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+      propertyPath: m_Name
+      value: Banana
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
+>>>>>>> parent of 83dc4af (Проклятый банан)
 --- !u!1001 &8690956449181694159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -819,4 +888,8 @@ SceneRoots:
   - {fileID: 8690956449181694159}
   - {fileID: 519420032}
   - {fileID: 1993390757}
+<<<<<<< HEAD
   - {fileID: 1758497332}
+=======
+  - {fileID: 3977032439234114345}
+>>>>>>> parent of 83dc4af (Проклятый банан)
