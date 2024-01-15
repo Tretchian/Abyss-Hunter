@@ -746,6 +746,7 @@ Transform:
   - {fileID: 1624514167}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &636190874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,6 +998,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ad0f6f8dc9cec74eb7c4ba07aa3b884, type: 3}
+=======
+>>>>>>> parent of 83dc4af (Проклятый банан)
 --- !u!1 &1177941334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8304507107235490029, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
@@ -1206,8 +1209,8 @@ Transform:
   m_GameObject: {fileID: 1459656305}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.35, z: -0.8804812}
-  m_LocalScale: {x: 300.79932, y: 300, z: 0.8194767}
+  m_LocalPosition: {x: -0.31, y: 0.86, z: -0.8804812}
+  m_LocalScale: {x: 30.799307, y: 15.762049, z: 0.8194767}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177941338}
@@ -1924,7 +1927,7 @@ Transform:
   m_GameObject: {fileID: 1993390756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.26, y: -0.71, z: 0}
+  m_LocalPosition: {x: -3.0629, y: 0.0571, z: 0}
   m_LocalScale: {x: 2.015207, y: 2.015207, z: 2.015207}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2123,11 +2126,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: 0.4097312
       objectReference: {fileID: 0}
     - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.89
+      value: -2.914334
       objectReference: {fileID: 0}
     - target: {fileID: 3962468000824866346, guid: a98566f7f0ef33141a511795d7bcbca9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2386,5 +2389,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1993390757}
   - {fileID: 3977032439234114345}
+<<<<<<< HEAD
   - {fileID: 1127994529}
   - {fileID: 1582221876}
+=======
+>>>>>>> parent of 83dc4af (Проклятый банан)
