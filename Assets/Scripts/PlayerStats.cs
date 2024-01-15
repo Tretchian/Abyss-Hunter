@@ -56,7 +56,7 @@ public class PlayerStats: MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-       .. Gizmos.DrawWireSphere(player_center, _itemPickupDistance);
+        Gizmos.DrawWireSphere(player_center, _itemPickupDistance);
     }
 
 }
