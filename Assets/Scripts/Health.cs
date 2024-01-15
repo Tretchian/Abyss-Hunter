@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
         }
         else {
             _currentHealth -= damage;
-            OnHealthChange.Invoke();
+            //OnHealthChange.Invoke();
             StartCoroutine(becomeInvulnerable()); 
         }
         

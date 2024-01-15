@@ -332,6 +332,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1885768686088519722, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
   m_PrefabInstance: {fileID: 8690956449181694159}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1177941339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177941334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0657a7bf14e39742b59b9bd6ee530e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _larvaPrefab: {fileID: 7918041176046667833, guid: 7ad0f6f8dc9cec74eb7c4ba07aa3b884, type: 3}
+  timeScale: 1
 --- !u!1 &1459656305
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: dc7fb09953c11934aa4aca51954d900f, type: 2}
+  script_container: {fileID: 0}
 --- !u!1 &1993390756
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +554,7 @@ GameObject:
   - component: {fileID: 1993390759}
   - component: {fileID: 1993390758}
   - component: {fileID: 1993390763}
+  - component: {fileID: 1993390764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -573,9 +589,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119a5a8b36a51e54289c5e8066ce7e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  currentHealth: 5
-  tag: 
+  _maxHealth: 5
+  _currentHealth: 0
+  dead: 0
+  _invulnerabilityTime: 1
+  invulnerable: 0
 --- !u!114 &1993390759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,6 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9b4da6221013148a9a8a276c73388b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!61 &1993390760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -725,11 +744,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPickupDistance: 1
-  _maxhp: 5
-  _attackspd: 1
-  _attackdmg: 1
-  _movementspd: 1
+  _baseMaxhp: 5
+  _baseAttackspd: 1
+  _baseAttackdmg: 1
+  _baseMovementspd: 1
   items: []
+--- !u!114 &1993390764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993390756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45aa01eb73202ce4ca59592d22f78131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originGO: {fileID: 0}
+  maxDistance: 3.3
+  angle: 35
+  _attack_coolDown: 0.4
+  attackOnCoolDown: 0
+  MouseAngle: 0
+  pointedObjects: []
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  Damage: 1
+  mousePos: {x: 0, y: 0, z: 0}
 --- !u!1001 &8690956449181694159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -811,6 +854,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8304507107235490029, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1177941337}
+    - targetCorrespondingSourceObject: {fileID: 8304507107235490029, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1177941339}
   m_SourcePrefab: {fileID: 100100000, guid: 8414eae3863612144b95ddc4942a1189, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
