@@ -15,7 +15,6 @@ public class Health : MonoBehaviour
     public event Action OnHealthChange;
     public float GetMaxHealth => _maxHealth;
     public bool IsDead => dead;
-<<<<<<< HEAD
     public static event Action<GameObject> OnTakenDamage;
     private void Start()
     {
