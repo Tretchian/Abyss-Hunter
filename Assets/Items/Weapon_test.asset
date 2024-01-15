@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 945cd19f1d00bb34596afff00db4fe03, type: 3}
-  m_Name: Item
+  m_Name: Weapon_test
   m_EditorClassIdentifier: 
-  Name: Weird cube
-  Description: Looks...uh.. weird.
-  _hp: 0
+  Name: Claws
+  Description: Seem to be sharp
+  Sprite: {fileID: 0}
   _maxhp: 0
-  _attackspd: 0.53
-  _attackdmg: 1
+  _attackspd: 0
+  _attackdmg: 0
   _movementspd: 0
