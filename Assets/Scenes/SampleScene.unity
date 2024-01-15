@@ -554,7 +554,6 @@ GameObject:
   - component: {fileID: 1993390759}
   - component: {fileID: 1993390758}
   - component: {fileID: 1993390763}
-  - component: {fileID: 1993390764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -749,30 +748,6 @@ MonoBehaviour:
   _baseAttackdmg: 1
   _baseMovementspd: 1
   items: []
---- !u!114 &1993390764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993390756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45aa01eb73202ce4ca59592d22f78131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originGO: {fileID: 0}
-  maxDistance: 3.3
-  angle: 35
-  _attack_coolDown: 0.4
-  attackOnCoolDown: 0
-  MouseAngle: 0
-  pointedObjects: []
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  Damage: 1
-  mousePos: {x: 0, y: 0, z: 0}
 --- !u!1001 &8690956449181694159
 PrefabInstance:
   m_ObjectHideFlags: 0
