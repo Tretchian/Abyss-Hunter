@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/2D-Overlap-Cone-Extension-For-Unity-main.meta
 guid: 75a3085af98aa9042a252d1ad376082b
+========
+guid: dd591474edbd7de45a33aebece2ed6a3
+>>>>>>>> 83dc4af633269a05f42812f98a69283814fc29f6:Assets/Items/Item.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
