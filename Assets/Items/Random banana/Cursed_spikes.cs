@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class Cursed_spikes : MonoBehaviour,Active_item
 {
@@ -9,7 +10,7 @@ public class Cursed_spikes : MonoBehaviour,Active_item
     }
     void Update()
     {
-        if(isUsed)Debug.Log(transform.name);   
+       
     }
     void Active_item.pickup()
     {
@@ -23,12 +24,11 @@ public class Cursed_spikes : MonoBehaviour,Active_item
     {
         Health.OnTakenDamage -= Health_OnTakenDamage;
     }
-
     private void Health_OnTakenDamage(GameObject obj)
     {
-        if (isUsed && obj && obj.tag.Equals("Player"))
+        if (isUsed &&obj && obj.tag.Equals("Player"))
         {
-            Debug.Log("Player is damaged");
-        }
+            Debug.Log("PLayer is damaged");
+        } //если obj c тегом игрока получил урон
     }
 }
