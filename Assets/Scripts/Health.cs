@@ -32,18 +32,8 @@ public class Health : MonoBehaviour
         }
         else {
             _currentHealth -= damage;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            OnTakenDamage.Invoke(transform.gameObject);
-            StartCoroutine(becomeInvulnerable());
-=======
-            //OnHealthChange.Invoke();
-            StartCoroutine(becomeInvulnerable()); 
->>>>>>> Arsenii
-=======
             OnHealthChange.Invoke();
             StartCoroutine(becomeInvulnerable()); 
->>>>>>> parent of 83dc4af (Проклятый банан)
         }
         
     }
