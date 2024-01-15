@@ -16,12 +16,7 @@ public class Health : MonoBehaviour
     public float GetMaxHealth => _maxHealth;
     public bool IsDead => dead;
 <<<<<<< HEAD
-<<<<<<< HEAD
     public static event Action<GameObject> OnTakenDamage;
-=======
->>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
-=======
->>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
     private void Start()
     {
         _currentHealth = _maxHealth;
@@ -39,19 +34,6 @@ public class Health : MonoBehaviour
         }
         else {
             _currentHealth -= damage;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-            OnTakenDamage.Invoke(transform.gameObject);
-            StartCoroutine(becomeInvulnerable());
-            OnHealthChange.Invoke();
-            StartCoroutine(becomeInvulnerable()); 
-
-
-=======
->>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
-=======
->>>>>>> parent of 6929d52 (Merge branch 'Arsenii' into Development)
             OnHealthChange.Invoke();
             StartCoroutine(becomeInvulnerable()); 
         }
