@@ -23,7 +23,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        col = this.gameObject.GetComponent<Collider2D>();
+        col = gameObject.GetComponent<Collider2D>();
     }
     void Update()
     {
@@ -45,7 +45,7 @@ public class Attack : MonoBehaviour
             {
                 Target_Unit = collider.gameObject;
                 Target_Unit.GetComponent<Health>().DealDamage(_attack_damage);
-                Debug.Log("Attacking " + Target_Unit);
+                // Debug.Log("Attacking " + Target_Unit);
             }
         }
         Target_Unit = null;
