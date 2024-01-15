@@ -26,7 +26,6 @@ public class PlayerStats: MonoBehaviour
         player_center = (Vector2)transform.position + GetComponent<BoxCollider2D>().offset;
         pickup();
     }
-    public float getAttackDmg => playerStats._attackdmg;
     void recount()
     {
         playerStats = new Stats();
@@ -46,14 +45,11 @@ public class PlayerStats: MonoBehaviour
                 continue;
             }
             items.Add(collider.GetComponent<Item>());
-            collider.transform.GetChild(2).GetComponent<Active_item>().pickup();
-            collider.transform.GetChild(2).SetParent(transform);
-           
+            
             collider.gameObject.SetActive(false);
         }
         recount();
     }
-
 
     private void OnDrawGizmos()
     {
