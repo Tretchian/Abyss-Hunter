@@ -15,6 +15,8 @@ public class Health : MonoBehaviour
     public event Action OnHealthChange;
     public float GetMaxHealth => _maxHealth;
     public bool IsDead => dead;
+
+    public static event Action<GameObject> OnTakenDamage;
     private void Start()
     {
         _currentHealth = _maxHealth;
@@ -32,8 +34,13 @@ public class Health : MonoBehaviour
         }
         else {
             _currentHealth -= damage;
-            OnHealthChange.Invoke();
+<<<<<<< HEAD
+            OnTakenDamage.Invoke(transform.gameObject);
+            StartCoroutine(becomeInvulnerable());
+=======
+            //OnHealthChange.Invoke();
             StartCoroutine(becomeInvulnerable()); 
+>>>>>>> Arsenii
         }
         
     }

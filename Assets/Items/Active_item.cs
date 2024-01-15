@@ -1,9 +1,4 @@
-using UnityEngine;
-
-public abstract class Active_item : MonoBehaviour
+public interface Active_item
 {
-    void Start(){}
-
-    void Update(){}
-
+   public void pickup() { }
 }
