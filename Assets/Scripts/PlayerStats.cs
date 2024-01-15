@@ -45,7 +45,9 @@ public class PlayerStats: MonoBehaviour
                 continue;
             }
             items.Add(collider.GetComponent<Item>());
-            
+            collider.transform.GetChild(2).GetComponent<Active_item>().pickup();
+            collider.transform.GetChild(2).SetParent(transform);
+           
             collider.gameObject.SetActive(false);
         }
         recount();

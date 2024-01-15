@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 945cd19f1d00bb34596afff00db4fe03, type: 3}
-  m_Name: Banana
+  m_Name: Weapon_test
   m_EditorClassIdentifier: 
-  Name: Cursed spikes
-  Description: Return damage to your enemies!
-  Sprite: {fileID: -5361988319473284080, guid: 9a7bb40f13030a94a9a1b2f6e499b101, type: 3}
-  _maxhp: 2
+  Name: Claws
+  Description: Seem to be sharp
+  Sprite: {fileID: 0}
+  _maxhp: 0
   _attackspd: 0
   _attackdmg: 0
-  _movementspd: 2
+  _movementspd: 0
