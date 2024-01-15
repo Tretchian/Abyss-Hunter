@@ -26,6 +26,7 @@ public class PlayerStats: MonoBehaviour
         player_center = (Vector2)transform.position + GetComponent<BoxCollider2D>().offset;
         pickup();
     }
+    public float getAttackDmg => playerStats._attackdmg;
     void recount()
     {
         playerStats = new Stats();
@@ -50,6 +51,7 @@ public class PlayerStats: MonoBehaviour
         }
         recount();
     }
+
 
     private void OnDrawGizmos()
     {
