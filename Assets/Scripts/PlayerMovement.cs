@@ -6,10 +6,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     public Animator animator;
-    public bool left;
-    public bool right;
-    public bool up;
-    public bool down;
     
     public float speed = 1f;
     void Start()
