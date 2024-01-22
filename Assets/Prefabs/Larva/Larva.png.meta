@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -430,24 +435,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Larva_2: 2036811701
-      Larva_9: -663171915
-      Larva_13: -734550105
-      Larva_7: 126199917
-      Larva_14: -1163609037
-      Larva_12: -131208170
       Larva_0: -147039911
-      Larva_6: 932814908
-      Larva_11: 1678909298
-      Larva_4: 1780119122
-      Larva_3: -1902504914
-      Larva_5: 738226644
-      Larva_10: -419540908
       Larva_1: 607268664
+      Larva_10: -419540908
+      Larva_11: 1678909298
+      Larva_12: -131208170
+      Larva_13: -734550105
+      Larva_14: -1163609037
+      Larva_2: 2036811701
+      Larva_3: -1902504914
+      Larva_4: 1780119122
+      Larva_5: 738226644
+      Larva_6: 932814908
+      Larva_7: 126199917
       Larva_8: -823186258
-  spritePackingTag: 
+      Larva_9: -663171915
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

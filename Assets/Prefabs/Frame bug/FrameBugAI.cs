@@ -26,21 +26,21 @@ public class FrameBugAI : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         health = GetComponent<Health>();
-        target = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(DelayStop());
+        if (target == null) target = GameObject.FindGameObjectWithTag("Player");
+        StartCoroutine(DelayMovement());
     }
 
     void FixedUpdate()
     {
-        if (health.IsDead() && !animator.IsUnityNull())
+        if (health.IsDead && !animator.IsUnityNull())
         {
             animator.SetTrigger("Die");
             return;
         }
         if (!isStopped)
         {
-            moveToTarget = (target.transform.position - transform.position).normalized; // Вектор направленный к target от жучка
-            movement = (moveToTarget * moveRandomDirection).normalized;//Вектор направления конечного перемещения, непосредственно используется в движении
+          
+            movement = (moveToTarget + moveRandomDirection).normalized;//Вектор направления конечного перемещения, непосредственно используется в движении
             transform.Translate(movement*_speed*Time.deltaTime);
         }
 
@@ -48,22 +48,23 @@ public class FrameBugAI : MonoBehaviour
     private void OnDrawGizmos()
     {
             Gizmos.color= Color.yellow;
-        Gizmos.DrawLine(transform.position,movement);
+        Gizmos.DrawLine(transform.position, (Vector2)transform.position + movement) ;
     }
 
     private IEnumerator DelayMovement()
     {
 
-        yield return new WaitForSeconds(_stopTimeSeconds);
+        yield return new WaitForSeconds(_moveTimeSeconds);
         isStopped = true;
         moveRandomDirection = new Vector2(Random.Range(-_moveRandomness, _moveRandomness), Random.Range(-_moveRandomness, _moveRandomness));
+        moveToTarget = (target.transform.position - transform.position).normalized; // Вектор направленный к target от жучка
         StartCoroutine(DelayStop());
     }
     private IEnumerator DelayStop()
     {
         
 
-        yield return new WaitForSeconds(_moveTimeSeconds);
+        yield return new WaitForSeconds(_stopTimeSeconds);
         isStopped = false;
         StartCoroutine(DelayMovement());
     }

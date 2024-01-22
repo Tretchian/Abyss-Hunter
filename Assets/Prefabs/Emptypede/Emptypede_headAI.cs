@@ -1,5 +1,7 @@
-using Unity.VisualScripting;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Emptypede_headAI : MonoBehaviour
 {
@@ -7,33 +9,40 @@ public class Emptypede_headAI : MonoBehaviour
 
     private Health health;
     private Rigidbody2D rb;
-    public GameObject[] bodyparts;
-    [SerializeField] private GameObject body_prefab;
-    [SerializeField] private int length = 5;
-
-    private Vector2 movement_direction = Vector2.left;
-    
+    private Dictionary<int, Vector2> directions = new Dictionary<int, Vector2>()
+    {
+        {1, Vector2.up },
+        {2, Vector2.down },
+        {3, Vector2.left },
+        {4, Vector2.right }
+    };
+    public Vector2 movement_direction = Vector2.left;
+    private Vector2 old_direction = Vector2.right;
     void Start()
     {
         health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
-        bodyparts = new GameObject[length];
-      
     }
 
     void FixedUpdate()
     {
-     
+        transform.Translate(movement_direction.normalized*_speed*Time.deltaTime,transform);
     }
 
-    private void CreateBodyPart(GameObject target_object,int id)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject new_part = body_prefab;
-        Emptypede_body body_script = new_part.GetComponent<Emptypede_body>();
-        body_script.speed = _speed;
-        body_script.next_bodypart = target_object;
-        body_script._id = id;
-        bodyparts[id] = new_part;
-        Instantiate(new_part);
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            SelectDirection();
+        }
+    }
+    private void SelectDirection()
+    {
+        old_direction = movement_direction;
+        movement_direction = directions[Random.Range(1, 5)];
+        while (movement_direction == old_direction)
+        {
+            movement_direction = directions[Random.Range(1, 5)];
+        }
     }
 }
