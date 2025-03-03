@@ -6,11 +6,13 @@ TagManager:
   tags:
   - Wall
   - Item
+  - RoomSpawnPoint
+  - Rooms
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Enemy
+  - 
   - Water
   - UI
   - 

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4167807431917636695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3476342919969431605}
+  - component: {fileID: 2258594806686178826}
+  m_Layer: 0
+  m_Name: Room Templates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3476342919969431605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167807431917636695}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.1, y: 8.2, z: -0.1301912}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2258594806686178826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167807431917636695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9d742f536543b47875e4e58d0be85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomRooms:
+  - {fileID: 4155734105648156996, guid: 85057c58208f5514faed00658db83b18, type: 3}
+  - {fileID: 1946430604598655328, guid: ff3f00456d9cc7c41b952411c3f00506, type: 3}
+  - {fileID: 4920097603329282796, guid: bcee96c8399ccd84eb0380d72fab4c4f, type: 3}
+  topRooms:
+  - {fileID: 3803112498936155231, guid: 17bc6ecb197ad0a4c936aaed93d52b9a, type: 3}
+  - {fileID: 4920097603329282796, guid: bcee96c8399ccd84eb0380d72fab4c4f, type: 3}
+  leftRooms:
+  - {fileID: 4920097603329282796, guid: bcee96c8399ccd84eb0380d72fab4c4f, type: 3}
+  - {fileID: 1946430604598655328, guid: a3128b4a0513ed64b8d1bc792df953a8, type: 3}
+  rightRooms:
+  - {fileID: 1946430604598655328, guid: ff3f00456d9cc7c41b952411c3f00506, type: 3}
+  - {fileID: 4920097603329282796, guid: bcee96c8399ccd84eb0380d72fab4c4f, type: 3}
+  - {fileID: 3803112498936155231, guid: 17bc6ecb197ad0a4c936aaed93d52b9a, type: 3}
